@@ -80,21 +80,8 @@ function Contact() {
             <FaArrowUpRightFromSquare className="contact-arrow" />
           </a>
 
-          {/* TÉLÉPHONE */}
-          <a href="tel:+33745650366" className="contact-card">
-            <div className="contact-icon">
-              <FaPhone />
-            </div>
-
-            <div>
-              <span className="contact-card-label">TÉLÉPHONE</span>
-              <h2>Appelez-moi</h2>
-              <p>07 45 65 03 66</p>
-            </div>
-
-            <FaArrowUpRightFromSquare className="contact-arrow" />
-          </a>
         </div>
+
 
         <div className="contact-bottom">
           <div>
@@ -118,5 +105,6 @@ function Contact() {
     </main>
   );
 }
+
 
 export default Contact;

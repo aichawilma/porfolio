@@ -2514,7 +2514,6 @@
     padding: 35px;
   }
 }
-
 @media (max-width: 550px) {
   .contact-hero {
     width: calc(100% - 30px);
@@ -2530,5 +2529,436 @@
 
   .contact-bottom {
     padding: 28px;
+  }
+}
+/* =========================================================
+   ENGAGEMENT & VIE ASSOCIATIVE
+========================================================= */
+
+.engagement-page {
+  min-height: 100vh;
+  padding-top: 120px;
+  background: #fff9f6;
+  color: #352b30;
+}
+
+.engagement-hero,
+.engagement-section,
+.engagement-conclusion {
+  width: min(1200px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.engagement-hero {
+  padding: 70px 0 100px;
+}
+
+.engagement-hero h1 {
+  max-width: 950px;
+  margin: 15px 0 30px;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: -5px;
+}
+
+.engagement-hero h1 span {
+  color: #b87d8e;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.engagement-intro {
+  max-width: 720px;
+  color: #756970;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.engagement-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 38px;
+}
+
+.engagement-values span {
+  padding: 10px 17px;
+  border: 1px solid #dccbd0;
+  border-radius: 999px;
+  color: #4b2632;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+/* SECTIONS */
+
+.engagement-section {
+  padding: 75px 0;
+  border-top: 1px solid #dccbd0;
+}
+
+.engagement-heading {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 25px;
+  margin-bottom: 55px;
+}
+
+.engagement-index {
+  color: #b87d8e;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.engagement-type {
+  margin: 4px 0 15px;
+  color: #756970;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.engagement-heading h2 {
+  max-width: 850px;
+  margin: 0;
+  font-size: clamp(2.5rem, 5vw, 4.7rem);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.engagement-heading h2 span {
+  color: #b87d8e;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* ASSOCIATION */
+
+.engagement-roles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.engagement-role-card {
+  padding: 38px;
+  background: #f3e3e5;
+  border-radius: 28px;
+}
+
+.engagement-role-current {
+  background: #4b2632;
+  color: #fff9f6;
+}
+
+.engagement-date {
+  margin: 0 0 30px;
+  color: #b87d8e;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.engagement-role-current .engagement-date {
+  color: #c98f9f;
+}
+
+.engagement-role-card h3,
+.scout-content h3 {
+  margin: 0 0 18px;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  letter-spacing: -1px;
+}
+
+.engagement-role-card > p:not(.engagement-date) {
+  color: #756970;
+  line-height: 1.7;
+}
+
+.engagement-role-current > p:not(.engagement-date) {
+  color: #e6d9dd;
+}
+
+.engagement-role-card ul {
+  margin: 25px 0 0;
+  padding-left: 20px;
+}
+
+.engagement-role-card li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.engagement-current-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.engagement-current-top span {
+  padding: 7px 11px;
+  background: #c98f9f;
+  color: #352b30;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* COMPÉTENCES */
+
+.engagement-skills {
+  margin: 35px 0 45px;
+}
+
+.engagement-skills > p {
+  margin-bottom: 15px;
+  color: #756970;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+
+.engagement-skills > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.engagement-skills span {
+  padding: 9px 14px;
+  background: #fff;
+  border: 1px solid #eadfe2;
+  border-radius: 999px;
+  color: #4b2632;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+/* PHOTOS */
+
+.engagement-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.engagement-photo {
+  height: 240px;
+  padding: 0;
+  overflow: hidden;
+  background: #f3e3e5;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.engagement-photo:nth-child(5n + 1) {
+  grid-column: span 2;
+}
+
+.engagement-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.engagement-photo:hover img {
+  transform: scale(1.04);
+}
+
+/* SCOUTISME */
+
+.scout-section {
+  margin-top: 20px;
+}
+
+.scout-content {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+  padding: 40px;
+  background: #f3e3e5;
+  border-radius: 28px;
+}
+
+.scout-description {
+  color: #665960;
+  line-height: 1.8;
+}
+
+.scout-description > p {
+  margin-top: 0;
+}
+
+.scout-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.scout-actions span {
+  padding: 8px 13px;
+  background: #fff9f6;
+  border-radius: 999px;
+  color: #4b2632;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* CONCLUSION */
+
+.engagement-conclusion {
+  margin-bottom: 100px;
+  padding: 70px;
+  background: #4b2632;
+  border-radius: 32px;
+  color: #fff9f6;
+}
+
+.engagement-conclusion .section-label {
+  color: #c98f9f;
+}
+
+.engagement-conclusion h2 {
+  max-width: 800px;
+  margin: 15px 0 25px;
+  font-size: clamp(2.6rem, 5vw, 4.8rem);
+  line-height: 1;
+  letter-spacing: -3px;
+}
+
+.engagement-conclusion h2 span {
+  color: #c98f9f;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.engagement-conclusion > p:last-child {
+  max-width: 650px;
+  margin-bottom: 0;
+  color: #e4d7db;
+  line-height: 1.8;
+}
+
+/* LIGHTBOX */
+
+.engagement-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: rgba(32, 22, 26, 0.92);
+}
+
+.engagement-lightbox img {
+  max-width: 92vw;
+  max-height: 88vh;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
+.engagement-lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  background: #fff9f6;
+  border: 0;
+  border-radius: 50%;
+  color: #4b2632;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .engagement-page {
+    padding-top: 95px;
+  }
+
+  .engagement-hero,
+  .engagement-section,
+  .engagement-conclusion {
+    width: calc(100% - 40px);
+  }
+
+  .engagement-roles,
+  .scout-content {
+    grid-template-columns: 1fr;
+  }
+
+  .scout-content {
+    gap: 20px;
+  }
+
+  .engagement-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .engagement-photo:nth-child(5n + 1) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 550px) {
+  .engagement-hero,
+  .engagement-section,
+  .engagement-conclusion {
+    width: calc(100% - 30px);
+  }
+
+  .engagement-hero {
+    padding: 50px 0 70px;
+  }
+
+  .engagement-hero h1 {
+    font-size: 3.2rem;
+    letter-spacing: -3px;
+  }
+
+  .engagement-heading {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .engagement-heading h2 {
+    letter-spacing: -2px;
+  }
+
+  .engagement-role-card,
+  .scout-content {
+    padding: 27px;
+  }
+
+  .engagement-gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .engagement-photo {
+    height: 180px;
+    border-radius: 14px;
+  }
+
+  .engagement-conclusion {
+    padding: 35px 28px;
+  }
+
+  .engagement-lightbox {
+    padding: 15px;
   }
 }
